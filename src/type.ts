@@ -13,3 +13,5 @@ export type OneParamFn<Param, Result> = (value: Param) => Result
 export type ObjectType<Value = unknown> = Record<string, Value>
 export type MapType<Value = unknown> = Map<string | number, Value>
 export type SetType<Value = unknown> = Set<Value>
+
+export type NumberLike = number | `${number}`

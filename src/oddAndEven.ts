@@ -4,7 +4,7 @@
  * @param num {number}
  * @returns {boolean}
  */
-export const isEven = num => num % 2 === 0
+export const isEven = (num: number) => num % 2 === 0
 
 /**
  * @title isOdd
@@ -12,4 +12,4 @@ export const isEven = num => num % 2 === 0
  * @param num {number}
  * @returns {boolean}
  */
-export const isOdd = num => num %2 === 1
+export const isOdd = (num: number) => num % 2 === 1

@@ -1,14 +1,9 @@
+import './base'
+import './is'
+import './getDecimalDigits'
+
 import * as _ from '..'
 import { test } from 'unit-testing-js'
-import { INFINITY, MAX_VALUES_NUMBER, MIN_VALUES_NUMBER } from '../constants'
-
-test('add', _.add,
-  { params: [1, 1], tobe: 2 },
-  { params: [MAX_VALUES_NUMBER, MAX_VALUES_NUMBER], tobe: MAX_VALUES_NUMBER },
-  { params: [MAX_VALUES_NUMBER, INFINITY], tobe: MAX_VALUES_NUMBER },
-  { params: [MAX_VALUES_NUMBER, -INFINITY], tobe: 0 },
-  { params: [INFINITY, -INFINITY], tobe: 0 },
-)
 
 test('ceil', _.ceil,
   { params: [3.1245], tobe: 4 },
@@ -18,20 +13,6 @@ test('ceil', _.ceil,
   { params: [6.004, 2], tobe: 6.01 },
   { params: [6040, -2], tobe: 6100 },
   { params: [6040111, -2], tobe: 6040200 },
-)
-
-test('divide', _.divide,
-  { params: [3, 1], tobe: 3 },
-  { params: [3, 3], tobe: 1 },
-  { params: [3, 2], tobe: 1.5 },
-  { params: [3, 4], tobe: 0.75 },
-  { params: [3, 5], tobe: 0.6 },
-  { params: [3, 9], tobe: 1 / 3 },
-  { params: [6, 4], tobe: 1.5 },
-  { params: [MAX_VALUES_NUMBER, 4], tobe: MAX_VALUES_NUMBER / 4 },
-  { params: [Infinity, 4], tobe: MAX_VALUES_NUMBER / 4 },
-  { name: '0-1', params: [1, INFINITY], tobe: 0 },
-  { name: '0-2', params: [1, -INFINITY], tobe: 0 },
 )
 
 test('floor', _.floor,
