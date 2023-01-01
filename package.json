@@ -1,7 +1,7 @@
 {
   "name": "0math",
-  "version": "2.4.4",
-  "description": "方法包",
+  "version": "0.0.1",
+  "description": "常用数学方法",
   "module": "lib/index.esm.js",
   "main": "lib/index.js",
   "unpkg": "/lib/",
@@ -56,6 +56,7 @@
     "@types/node": "^18.11.2",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
+    "abandonjs": "^2.4.4",
     "check-it-type": "0.1.4",
     "eslint": "^8.25.0",
     "eslint-plugin-prettier": "^4.2.1",

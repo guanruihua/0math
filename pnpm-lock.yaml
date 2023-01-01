@@ -12,6 +12,7 @@ specifiers:
   '@types/node': ^18.11.2
   '@typescript-eslint/eslint-plugin': ^5.40.1
   '@typescript-eslint/parser': ^5.40.1
+  abandonjs: ^2.4.4
   check-it-type: 0.1.4
   eslint: ^8.25.0
   eslint-plugin-prettier: ^4.2.1
@@ -40,6 +41,7 @@ devDependencies:
   '@types/node': 18.11.2
   '@typescript-eslint/eslint-plugin': 5.40.1_ukgdydjtebaxmxfqp5v5ulh64y
   '@typescript-eslint/parser': 5.40.1_z4bbprzjrhnsfa24uvmcbu7f5q
+  abandonjs: 2.4.4
   check-it-type: 0.1.4
   eslint: 8.25.0
   eslint-plugin-prettier: 4.2.1_znq2sm4m5bonjw4qqm6mwhbe2q
@@ -1420,6 +1422,11 @@ packages:
     dependencies:
       jsonparse: 1.3.1
       through: 2.3.8
+    dev: true
+
+  /abandonjs/2.4.4:
+    resolution: {integrity: sha512-pKOZzJfb/sNPFEw4Z7rehi+rhs5sR76fL54nvGchr9fafb7RisGPcSsAFBofOxwov3Bxsj9Wjf0HrEVQog7ZAg==}
+    engines: {node: '>=16'}
     dev: true
 
   /acorn-jsx/5.3.2_acorn@7.4.1:

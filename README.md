@@ -1,18 +1,20 @@
-# abandonjs
+# 0math
 
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) [![npm version](https://img.shields.io/npm/v/abandonjs.svg?style=flat)](https://www.npmjs.com/package/abandonjs)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) [![npm version](https://img.shields.io/npm/v/0math.svg?style=flat)](https://www.npmjs.com/package/0math)
 
-- [Api docs](https://abandonjs.github.io/)
-- 常用方法的封装
+- [Api docs](https://0math.github.io/)
+- 常用数学方法的封装
 
 ## 使用
 
 ```shell
-npm install abandonjs -D
+npm install 0math -D
 ```
 
+> 期望值, 平均, 众数, 中位数
+
 ```js
-import { type } from 'abandonjs'
+import { type } from '0math'
 ```
 
  $(x^2 + x^y )^{x^y}+ x_1^2= y_1 - y_2^{x_1-y_1^2}$
