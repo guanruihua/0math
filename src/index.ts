@@ -1,8 +1,8 @@
 import { useValue } from './util'
-import { toNumber } from '../number'
+import { toNumber } from 'abandonjs'
 import { isEffectNumber, isNumber, type } from 'check-it-type'
-import { Itteratee } from '../type'
-import { MAX_VALUES_NUMBER, MIN_VALUES_NUMBER } from '../constants'
+import { Itteratee } from './type'
+import { MAX_VALUES_NUMBER, MIN_VALUES_NUMBER } from './constants'
 
 export * from './oddAndEven'
 export * from './average'
