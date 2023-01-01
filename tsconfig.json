@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "/lib",
+    "target": "ESNext",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "emitDecoratorMetadata": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "alwaysStrict": false,
+    "moduleResolution": "node",
+    "experimentalDecorators":true,
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*", "*.d.ts"],
+  "exclude": [
+    "./config/**/*",
+    "**/__test__/*",
+    "**/*/md.ts",
+    "**/*/*.md",
+  ]
+}

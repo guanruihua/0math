@@ -1,0 +1,12 @@
+.eslintrc.js
+test/
+lib/
+**/__test__
+md.ts
+rollup.config.ts
+config/
+commitlint*
+jest.config.js
+coverage/
+docs.js
+temp/
