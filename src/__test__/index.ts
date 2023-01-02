@@ -82,8 +82,3 @@ test('sumBy', _.sumBy,
   { params: [[{ a: 123 }, { a: 999 }, { a: 111333 }]], tobe: 0 },
   { params: [[{ a: 123 }, { a: 999 }, { a: 111333 }], 'a'], tobe: 112455 },
 )
-
-
-test('multiply', _.multiply,
-  { params: [110, 4], tobe: 440 },
-)

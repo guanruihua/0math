@@ -249,17 +249,6 @@ export function sumBy(list: any[], itteratee?: Itteratee): undefined | number {
   return total
 }
 
-/**
- * @title multiply
- * @description 相乘
- * @param augend number 乘数
- * @param addend number 被乘数
- * @returns 积
- */
-export function multiply(augend: number, addend: number): number {
-  return toNumber(toNumber(augend) * toNumber(addend))
-}
-
 export function useValue(itteratee?: Itteratee): any {
   const __type: string = type(itteratee)
 
