@@ -49,11 +49,11 @@ export function sub(subtrahend: number, minuend: number): number {
  * @description 相除(不支持超过`number`类型的精度)
  * @param divisor {number} 除数
  * @param dividend {number} 被除数
- * @param precision {number|'auto'='auto'} 精确度
+ * @param precision {?number} 精确度
  * @returns {number} 商 
  * @version 0.0.2
  */
-export function divide(divisor: number, dividend: number, precision: number | 'auto' = 'auto'): number {
+export function divide(divisor: number, dividend: number, precision?: number): number {
   if (divisor === 0) return 0
   // if (dividend === 0) return divisor > 0 ? Infinity : -Infinity
   if (dividend === divisor) return 1
@@ -70,14 +70,13 @@ export function divide(divisor: number, dividend: number, precision: number | 'a
     baseDigits = Math.pow(10, decimalDigits)
   }
 
-  if (precision !== 'auto') {
+  if (precision !== undefined) {
     const digits = Math.pow(10, precision)
     const result = (divisor * digits * baseDigits) / (dividend * baseDigits)
     return Math.trunc(result) / digits
   }
 
-  const result = (divisor * baseDigits) / (dividend * baseDigits)
-  return result
+  return (divisor * baseDigits) / (dividend * baseDigits)
 }
 
 /**
