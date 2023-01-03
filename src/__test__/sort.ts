@@ -1,5 +1,5 @@
 import { UnitTest } from 'unit-testing-js'
-import { sort } from '../sort'
+import { sort } from '../util'
 
 UnitTest(sort)
 	.addCases(

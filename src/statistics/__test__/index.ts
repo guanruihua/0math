@@ -1,1 +1,2 @@
 import './mode'
+import './median'
