@@ -1,6 +1,7 @@
 import './base'
 import './is'
 import './getDecimalDigits'
+import './sort'
 
 import * as _ from '..'
 import { test } from 'unit-testing-js'

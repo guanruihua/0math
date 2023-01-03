@@ -1,7 +1,6 @@
 import { toNumber } from 'abandonjs'
-import { isDecimals } from './is'
-import { getDecimalDigits } from './util'
-// import { MAX_VALUES_NUMBER, MIN_VALUES_NUMBER } from './constants'
+import { isDecimals } from '../is'
+import { getDecimalDigits } from '../util'
 
 /**
  * @title add
@@ -15,10 +14,6 @@ export function add(addend: number, augend: number): number {
 
   if (addend === 0) return augend
   if (augend === 0) return addend
-
-  // if ((augend === Infinity && addend === -Infinity) ||
-  //   (augend === -Infinity && addend === Infinity)) return 0
-  // if (augend === Infinity || addend === Infinity) return Infinity
 
   if (isDecimals(augend) || isDecimals(addend)) {
     const augendDecimalDigits = getDecimalDigits(augend)
@@ -41,6 +36,7 @@ export function add(addend: number, augend: number): number {
  * @version 0.0.2
  */
 export function sub(subtrahend: number, minuend: number): number {
+  if (subtrahend === minuend) return 0
   return add(subtrahend, -minuend)
 }
 
@@ -90,5 +86,5 @@ export function multiply(multiplier: number, multiplicand: number): number {
   if (multiplicand === 0 || multiplier == 0) return 0
   if (multiplier === 1) return multiplicand
   if (multiplicand === 1) return multiplier
-  return toNumber(toNumber(multiplier) * toNumber(multiplicand))
+  return multiplier * multiplicand
 }

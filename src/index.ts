@@ -1,6 +1,5 @@
-export * from './oddAndEven'
-export * from './average'
+export * from './statistics'
 export * from './base'
-export * from './is'
 
+export * from './is'
 export * from './util'

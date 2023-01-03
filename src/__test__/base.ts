@@ -1,5 +1,5 @@
 import { UnitTest, test } from 'unit-testing-js'
-import { add, divide, multiply } from '..'
+import { add, divide, multiply, sub } from '..'
 import { INFINITY, MAX_VALUES_NUMBER, MIN_VALUES_NUMBER } from '../constants'
 
 UnitTest(add)
@@ -57,4 +57,8 @@ UnitTest(divide)
 
 test('multiply', multiply,
 	{ params: [110, 4], tobe: 440 },
+)
+
+test('sub', sub,
+	{ params: [3, 1], tobe: 2 }
 )
