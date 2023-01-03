@@ -71,6 +71,6 @@
     "ts-node": "^10.9.1",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.8.4",
-    "unit-testing-js": "0.3.3"
+    "unit-testing-js": "0.3.5"
   }
 }

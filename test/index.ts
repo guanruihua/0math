@@ -6,6 +6,7 @@ TestSetting.set('isSummary', true)
 function runTest() {
   loadModule(async () => {
     await import(`../src/__test__`)
+    await import(`../src/statistics/__test__`)
   })
 }
 
