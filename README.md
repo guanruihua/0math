@@ -14,7 +14,7 @@ npm install 0math -D
 > 期望值, 平均, 众数, 中位数
 
 ```js
-import { type } from '0math'
+import { add } from '0math'
 ```
 
  $(x^2 + x^y )^{x^y}+ x_1^2= y_1 - y_2^{x_1-y_1^2}$
