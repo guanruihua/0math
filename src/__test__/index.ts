@@ -1,4 +1,3 @@
-import './base'
 import './is'
 import './getDecimalDigits'
 import './sort'
