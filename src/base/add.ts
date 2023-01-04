@@ -1,5 +1,4 @@
-import { getDecimalDigits } from '../util'
-import { isDecimals } from '../is'
+import { getDecimalDigits, isDecimals } from '../util'
 
 /**
  * @title add

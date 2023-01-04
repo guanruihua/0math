@@ -1,8 +1,9 @@
 export * from './sort'
+export * from './is'
 import { toNumber } from 'abandonjs'
 import { isEffectNumber, isNumber, isString, type } from 'check-it-type'
 import { Itteratee, NumberLike } from '../type'
-import { isDecimals } from '../is'
+import { isDecimals } from './is'
 import { INFINITY } from '../constants'
 
 /**

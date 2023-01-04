@@ -1,5 +1,4 @@
-import { isDecimals } from '../is'
-import { getDecimalDigits } from '../util'
+import { getDecimalDigits, isDecimals } from '../util'
 /**
  * @title divide
  * @description 相除(不支持超过`number`类型的精度)
