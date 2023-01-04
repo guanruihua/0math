@@ -27,7 +27,7 @@ specifiers:
   ts-node: ^10.9.1
   ts-node-dev: ^1.1.8
   typescript: ^4.8.4
-  unit-testing-js: 0.3.3
+  unit-testing-js: 0.3.5
 
 devDependencies:
   '@babel/core': 7.20.5
@@ -56,7 +56,7 @@ devDependencies:
   ts-node: 10.9.1_xnjx46q3udvkohknv22hlrv7de
   ts-node-dev: 1.1.8_y75ioxfqw7ybw2bnkec5udgt7e
   typescript: 4.8.4
-  unit-testing-js: 0.3.3
+  unit-testing-js: 0.3.5
 
 packages:
 
@@ -4521,8 +4521,8 @@ packages:
     hasBin: true
     dev: true
 
-  /unit-testing-js/0.3.3:
-    resolution: {integrity: sha512-d4URaqMwjkVDwYI/bQqkWVk+tvLzH03L8MmSTTd/6iYzHZyIH+qJcx51Gq9xo/zCqw0NL8GbGKaM1nEDpCSLfA==}
+  /unit-testing-js/0.3.5:
+    resolution: {integrity: sha512-1QpLhbg7GQ2wG1n0J+d3EbV8LbnbcxSkPubpNHoWn5Gc71U+nRJATtb/1y6LgeJbmKMne/Gjlmtb8/JzGVmxoQ==}
     engines: {node: '>=16'}
     dev: true
 
