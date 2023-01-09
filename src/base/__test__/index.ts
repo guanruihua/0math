@@ -1,5 +1,6 @@
 import './shape'
 import './abs'
+import './random'
 import { UnitTest, test } from 'unit-testing-js'
 import { add, divide, multiply, sub } from '..'
 import { INFINITY, MAX_VALUES_NUMBER, MIN_VALUES_NUMBER } from '../../constants'
