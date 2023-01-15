@@ -28,8 +28,8 @@ export function add(addend: number, augend: number): number {
 
 /**
  * @title add
- * @description 两数求和
- * @param addend {number} 加数
+ * @description 多数求和
+ * @param addends {...number[]} 加数
  * @returns {number}
  * @version 0.1.1
  */
