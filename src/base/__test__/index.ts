@@ -1,32 +1,11 @@
 import './shape'
 import './abs'
 import './random'
+import './add'
+
 import { UnitTest, test } from 'unit-testing-js'
-import { add, divide, multiply, sub } from '..'
+import { divide, multiply, sub } from '..'
 import { INFINITY, MAX_VALUES_NUMBER, MIN_VALUES_NUMBER } from '../../constants'
-
-
-UnitTest(add)
-	.addCases(
-		// { params: [MAX_VALUES_NUMBER, MAX_VALUES_NUMBER], tobe: MAX_VALUES_NUMBER },
-		// { params: [MAX_VALUES_NUMBER, INFINITY], tobe: MAX_VALUES_NUMBER },
-		// { params: [MAX_VALUES_NUMBER, -INFINITY], tobe: 0 },
-		{ params: [INFINITY, -INFINITY], tobe: 0 },
-		{ params: [0.001, 0.0003], tobe: 0.0013 },
-		{ params: [1, 0.00003], tobe: 1.00003 },
-		{ params: [0.1, 0.00003], tobe: 0.10003 },
-	)
-	.addParamMap(
-		[1, 3],
-		[1, 2],
-	).setIndexValues({
-		0: 2,
-		1: 3,
-		2: 4,
-		3: 5
-	})
-	.buildCases()
-	.run()
 
 UnitTest(divide)
 	.addCases(

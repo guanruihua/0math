@@ -25,3 +25,9 @@ export function add(addend: number, augend: number): number {
 	}
 	return augend + addend
 }
+
+export function adds(...addends: number[]): number {
+	if (addends.length === 0) return 0
+	if (addends.length === 1) return addends[0]
+	return addends.reduce((prev: number, curr: number) => add(prev, curr))
+}
