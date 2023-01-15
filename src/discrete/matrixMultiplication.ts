@@ -24,8 +24,7 @@ export function matrixMultiplication(
 		matrixMultiplierColSize!==matrixMultiplicandRowSize
 		|| matrixMultiplierRowSize!==matrixMultiplicandColSize
 		){
-		console.error('The format of Matrix Multiplier and Matrix Multiplicand does not meet the requirements')
-		return []
+		throw new Error('The format of Matrix Multiplier and Matrix Multiplicand does not meet the requirements')
 	}
 	/*** 有效性判断 end ***/
 

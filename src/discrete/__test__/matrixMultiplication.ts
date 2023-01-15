@@ -11,6 +11,13 @@ UnitTest(matrixMultiplication)
 				[3]
 			], tobe: [],
 		},
+		// {
+		// 	params: [
+		// 		[[2, 3]],
+		// 		[[3]]
+		// 	], 
+		// 	tobe: [],
+		// }, 
 		{
 			params: [
 				[[2]],
