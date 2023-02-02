@@ -1,7 +1,6 @@
 export * from './statistics'
 export * from './base'
 export * from './constants'
+export * from './trigonometric'
+export * from './discrete'
 export * from './util'
-
-// import * as Constants from './constants'
-// console.log({...Constants})

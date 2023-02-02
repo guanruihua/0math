@@ -25,3 +25,16 @@ export function add(addend: number, augend: number): number {
 	}
 	return augend + addend
 }
+
+/**
+ * @title add
+ * @description 多数求和
+ * @param addends {...number[]} 加数
+ * @returns {number}
+ * @version 0.1.1
+ */
+export function adds(...addends: number[]): number {
+	if (addends.length === 0) return 0
+	if (addends.length === 1) return addends[0]
+	return addends.reduce((prev: number, curr: number) => add(prev, curr))
+}

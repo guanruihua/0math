@@ -8,6 +8,7 @@ function runTest() {
     await import(`../src/statistics/__test__`)
     await import(`../src/base/__test__`)
     await import(`../src/trigonometric/__test__`)
+    await import(`../src/discrete/__test__`)
   })
 }
 
