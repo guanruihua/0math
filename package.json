@@ -1,6 +1,6 @@
 {
   "name": "0math",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "常用数学方法",
   "module": "lib/index.esm.js",
   "main": "lib/index.js",
