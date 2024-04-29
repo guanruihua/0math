@@ -11,7 +11,7 @@ export const toFahrenheit = (celsius: number) => celsius * 9 / 5 + 32
 /**
  * @title toCelsius 
  * @description 华氏度转换为摄氏度
- * @param fahrenheit {number}
+ * @param {number} fahrenheit
  * @returns {number}
  * @version 2.4.0
  */

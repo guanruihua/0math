@@ -1,6 +1,6 @@
 {
   "name": "0math",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "常用数学方法",
   "module": "lib/index.esm.js",
   "main": "lib/index.js",
@@ -18,11 +18,7 @@
     "start": "node ./dist/index.js",
     "eslint": "eslint . --ext .ts",
     "eslint:fix": "eslint . --ext .ts --fix",
-    "pub": "npm publish",
-    "nocache": "jest --no-cache",
-    "watch": "jest --watchAll",
-    "jest": "jest --coverage",
-    "verbose": "npx jest --verbose"
+    "pub": "npm publish"
   },
   "husky": {
     "hooks": {
@@ -57,11 +53,10 @@
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "abandonjs": "^2.4.4",
-    "check-it-type": "0.1.4",
+    "asura-eye": "workspace:^",
     "eslint": "^8.25.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.1",
-    "jest": "^29.2.1",
     "node-notifier": "^10.0.1",
     "prettier": "^2.7.1",
     "rollup": "^2.79.1",

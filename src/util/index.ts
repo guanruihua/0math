@@ -1,6 +1,6 @@
 export * from './sort'
 export * from './is'
-import { isEffectNumber, isNumber, isString, type } from 'check-it-type'
+import { isEffectNumber, isNumber, isString, type } from 'asura-eye'
 import { Itteratee, NumberLike } from '../type'
 import { isDecimals } from './is'
 import { INFINITY } from '../constants'
@@ -49,7 +49,7 @@ export function toHEX(
 ): string {
   let result = ''
   let tempNum = Number(num)
-  if (num > binary ** 9) return '1024B'
+  if (tempNum > binary ** 9) return '1024B'
   const index = 0
 
   function translate(index: number): void {

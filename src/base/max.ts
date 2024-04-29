@@ -1,4 +1,4 @@
-import { isEffectNumber, type } from 'check-it-type'
+import { isEffectNumber, type } from 'asura-eye'
 import { Itteratee } from '../type'
 import { useValue } from '../util'
 /**

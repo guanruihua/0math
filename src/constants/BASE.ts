@@ -1,6 +1,6 @@
-export const MAX_VALUES_NUMBER = 1.7976931348623157e+308;
-export const MIN_VALUES_NUMBER = -1.7976931348623157e+308;
-export const INFINITY = Infinity; // 无限
+export const MAX_VALUES_NUMBER = 1.7976931348623157e308
+export const MIN_VALUES_NUMBER = -1.7976931348623157e308
+export const INFINITY = Infinity // 无限
 
 /**
  * 欧拉常数，也是自然对数的底数，约等于 2.718。
