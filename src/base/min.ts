@@ -1,6 +1,5 @@
-import { isEffectNumber } from 'asura-eye'
-import { Itteratee } from '../type'
-import { useValue } from '../util'
+import { isEffectNumber, isString } from 'asura-eye'
+import { max_a2b } from './max'
 
 /**
  * @title min
@@ -8,33 +7,28 @@ import { useValue } from '../util'
  * @param list 要迭代的数组
  * @returns 最小值
  */
-export function min(list: any[]): number | undefined {
-  return minBy(list)
-}
-
-/**
- * @title minBy
- * @description 求最小值
- * @param list 要迭代的数组
- * @param itteratee 迭代函数 / key
- * @returns 最小值
- */
-export function minBy(list: any[], itteratee?: Itteratee): any {
-
+export function min(list: any[]): number | string | undefined {
   if (list.length === 0) return undefined
-  let result: any = undefined
-  let minValue: number | undefined = undefined
+  let value: number | undefined = undefined
   let len: number = list.length
-
+  const noNum = (val: any): boolean => {
+    if (isEffectNumber(val)) return false
+    if (isString(val) && /[+-]?\d+\.?\d+?/gi.test(val)) return false
+    return true
+  }
   while (len--) {
-    const val = Number(useValue(itteratee)(list[len]))
-    if (isEffectNumber(val)) {
-      if (minValue === undefined) {
-        minValue = val
-      } else minValue = minValue < val ? minValue : val
-      result = list[len]
+    const val = list[len]
+    if (noNum(val)) {
+      continue
+    }
+    if (value === undefined) {
+      value = val
+      continue
+    }
+    if (max_a2b(value, val)) {
+      value = val
     }
   }
 
-  return result
+  return value
 }

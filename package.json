@@ -1,6 +1,6 @@
 {
   "name": "0math",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "常用数学方法",
   "module": "lib/index.esm.js",
   "main": "lib/index.js",
@@ -8,6 +8,7 @@
   "deliver": "/lib/",
   "typings": "lib/index.d.ts",
   "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only ./dev/index.ts",
     "git:style": "bash ./config/script/style.bat",
     "commitlint": "commitlint -e",
     "reload": "rimraf node_modules && pnpm install",
@@ -67,5 +68,8 @@
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.8.4",
     "unit-testing-js": "0.3.5"
+  },
+  "dependencies": {
+    "0file-system": "^0.3.0"
   }
 }

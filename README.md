@@ -2,7 +2,7 @@
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) [![npm version](https://img.shields.io/npm/v/0math.svg?style=flat)](https://www.npmjs.com/package/0math)
 
-- [Api docs](https://0math.github.io/)
+- [docs](https://0math.github.io/)
 - 常用数学方法的封装
 
 ## 使用
@@ -55,24 +55,24 @@ $f(x_1,x_2,\ldots,x_n) = \left({1 \over x_1}\right)^2+\left({1 \over x_2}\right)
 
 数学符号
 
-![](./__assets__/README-2022-12-31-22-08-48.png)
+![](./.assets/README-2022-12-31-22-08-48.png)
 
 三角函数
 
-![](./__assets__/README-2022-12-31-22-08-59.png)
+![](./.assets/README-2022-12-31-22-08-59.png)
 
 定积分
 
-![](./__assets__/README-2022-12-31-22-09-42.png)
+![](./.assets/README-2022-12-31-22-09-42.png)
 
 集合
 
-![](./__assets__/README-2022-12-31-22-09-53.png)
+![](./.assets/README-2022-12-31-22-09-53.png)
 
 对数
 
-![](./__assets__/README-2022-12-31-22-11-01.png)
+![](./.assets/README-2022-12-31-22-11-01.png)
 
 希腊
 
-![](./__assets__/README-2022-12-31-22-11-20.png)
+![](./.assets/README-2022-12-31-22-11-20.png)

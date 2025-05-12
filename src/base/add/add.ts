@@ -3,8 +3,8 @@ import { getDecimalDigits, isDecimals } from '../../util'
 /**
  * @title add
  * @description 两数求和
- * @param addend {number} 加数
- * @param augend {number} 被加数
+ * @param {number} addend 加数
+ * @param {number} augend 被加数
  * @returns {number}
  * @version 0.0.2
  */
@@ -16,10 +16,7 @@ export function add(addend: number, augend: number): number {
   if (isDecimals(augend) || isDecimals(addend)) {
     const augendDecimalDigits = getDecimalDigits(augend)
     const addendDecimalDigits = getDecimalDigits(addend)
-    const decimalDigits =
-      augendDecimalDigits > addendDecimalDigits
-        ? augendDecimalDigits
-        : addendDecimalDigits
+    const decimalDigits = augendDecimalDigits > addendDecimalDigits ? augendDecimalDigits : addendDecimalDigits
     const digits = Math.pow(10, decimalDigits)
     const augendTemp = augend * digits
     const addendTemp = addend * digits
@@ -28,11 +25,10 @@ export function add(addend: number, augend: number): number {
   return augend + addend
 }
 
-
 /**
- * @title add
+ * @title adds
  * @description 多数求和
- * @param addends {...number[]} 加数
+ * @param {...number[]} addends 加数
  * @returns {number}
  * @version 0.1.1
  */

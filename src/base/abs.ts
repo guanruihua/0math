@@ -1,7 +1,7 @@
 /**
  * @title abs
  * @description 绝对值
- * @param value {number}
+ * @param {number} value
  * @returns {number}
  */
 export function abs(value: number): number {

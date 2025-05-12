@@ -14,4 +14,10 @@ export type ObjectType<Value = unknown> = Record<string, Value>
 export type MapType<Value = unknown> = Map<string | number, Value>
 export type SetType<Value = unknown> = Set<Value>
 
-export type NumberLike = number | `${number}`
+
+/**
+ * @title 数字类型类
+ * @description 
+ * @supported 数字 | 数字字符串 | 带有其他字符的数字字符串
+ */
+export type NumberLike = number | `${number}` | string
